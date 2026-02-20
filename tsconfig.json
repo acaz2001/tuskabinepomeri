@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "sanity/lib/getAllProducts.js", "sanity/schemaTypes/category.js", "sanity/lib/getBlogBySlug.js", "app/page.tsx", "components/typography/Kontent.jsx", "components/MyComponentMaps.jsx"  ],
   "exclude": ["node_modules"]
 }
