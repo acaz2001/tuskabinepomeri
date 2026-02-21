@@ -30,6 +30,7 @@ import { IoMailOutline } from "react-icons/io5";
 import ButtonMailto from '../components/ButtonMailto'
 
 
+
 const images = [
     { src: 'https://images.unsplash.com/photo-1768310481123-9c8e4e6fc61a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', aspect_ratio: 4 / 3 },
    
@@ -48,10 +49,12 @@ export default async function Home() {
         <div className="flex flex-col items-center py-10 mb-10 w-full rounded-4xl
          bg-[#f9f6fe]">
         <div className="mb-5">
-          <button className="text-[#4aaf31] bg-transparent px-8 py-2 rounded-3xl
-            font-bold cursor-pointer border-[#4aaf31] border text-[12px]">
-              Staklorezac Verde
-          </button>
+          <Link href={'https://www.verdestaklorezac.com/'} target="_blank">
+            <button className="text-[#4aaf31] bg-transparent px-8 py-2 rounded-3xl
+              font-bold cursor-pointer border-[#4aaf31] border text-[12px]">
+                Staklorezac Verde
+            </button>
+          </Link>
         </div>
         
           <h1 className="text-black text-center md:text-6xl text-3xl font-[550] tracking-[0.5px]
@@ -65,14 +68,19 @@ export default async function Home() {
         
         {/* Buttons*/}
         <div className="flex md:flex-row flex-col gap-2 mt-5">
-          <button className="text-white bg-black px-8 py-2 rounded-3xl
-          font-medium cursor-pointer text-[12px] md:text-[14px]">
-            Izrada Po Meri
-          </button>
-          <button className="text-black bg-transparent px-8 py-2 rounded-3xl
-          font-medium cursor-pointer border-black border text-[12px] md:text-[14px]">
-            Gotovi modeli
-          </button>
+          <Link href={'/#cene'}>
+            <button className="text-white bg-black px-8 py-2 rounded-3xl
+            font-medium cursor-pointer text-[12px] md:text-[14px]"
+            >
+              Kako se kreću cene
+            </button>
+          </Link>
+          <Link href={'https://www.verdestaklorezac.com/tus-kabine'} target='_blank'>
+            <button className="text-black bg-transparent px-8 py-2 rounded-3xl
+            font-medium cursor-pointer border-black border text-[12px] md:text-[14px]">
+              Gotovi modeli
+            </button>
+          </Link>
         </div>
         </div>
 
@@ -215,6 +223,12 @@ export default async function Home() {
                   </Collapsible>
                 </CardContent>
               </Card>
+              <Link href={'https://www.verdestaklorezac.com/tus-kabine/klizne'} target='_blank'>
+                <button className="text-white bg-black px-8 py-2 rounded-3xl
+                font-medium cursor-pointer text-[14px] md:text-[16px] mt-4">
+                  Ovde možete da vidite sve modele kliznih kabina i cene.
+                </button>
+              </Link>
 
             </div>
           </div>
@@ -299,6 +313,12 @@ export default async function Home() {
                 </Collapsible>
               </CardContent>
             </Card>
+            <Link href={'https://www.verdestaklorezac.com/tus-kabine/sarke'} target='_blank'>
+                <button className="text-white bg-black px-8 py-2 rounded-3xl
+                font-medium cursor-pointer text-[14px] md:text-[16px] mt-4">
+                  Ovde možete da vidite sve modele kliznih kabina i cene.
+                </button>
+            </Link>
 
             </div>
           </div>
@@ -368,6 +388,12 @@ export default async function Home() {
                 </Collapsible>
               </CardContent>
             </Card>
+            <Link href={'https://www.verdestaklorezac.com/tus-kabine/paravan'} target='_blank'>
+                <button className="text-white bg-black px-8 py-2 rounded-3xl
+                font-medium cursor-pointer text-[14px] md:text-[16px] mt-4">
+                  Ovde možete da vidite sve modele kliznih kabina i cene.
+                </button>
+            </Link>
 
             </div>
           </div>
@@ -379,20 +405,24 @@ export default async function Home() {
 
         <div className="w-full justify-start mt-10">
           <Naslov className={''}>
-            Havarija kod kabina se retko dešava.
+            Montaža traje 1-3 sata.
           </Naslov>
           <Tekst className={''}>
-            Kabine su pomoću sistema za klizanje i nošenja stakla odlično osigurane.Kod kliznih postoje osigurači koji se pričvršćuju na staklo a nalaze se direktno ispod šine po kojoj klizaju vrata i time osigurači ne daju vratima da ispadnu sa šine.
+           Što se tiče montaže, kabina bude gotova za manje od 2 sata, čak se Paravan montira i za kraće vreme za 40-50min.
           </Tekst>
           <Tekst className={''}>
-            Kod kabina na šarke vrata drže šarke koje su pričvršćene za fiksno staklo ili zid tako da vrata ne mogu da spadnu.
-            U slučajima koja se desi havarija onda je to uglavnom razlog ne adekvatnog korišćenja, lupanje vratima.
+            Postupak montaže je takav da se prvo lepe U profili na pločice, nema bušenja, nakon toga ubacuju fiksna stakla u njih i silikoniraju se da bi se fiksirala i zaštitila kabina da ne curi voda.
+          </Tekst>
+          <Tekst className={''}>
+            Sledeće je da se montiraju vrata, ako su šarke onda se kače na fiks ili ako su klizna montira se prvo šina po kojoj klizaju vrata na fiksna stakla pa se onda kače vrata da klizaju.
+          </Tekst>
+          <Tekst className={''}>
+            Kada je paravan u pitanju isto se prvo stavljaju U profili koji se lepe na pločice, ubacuje se staklo i silikonira, na kraju se stavlja teleskop koji se buši u zid i šrafi za staklo da time dodatno učvrsti staklo.
           </Tekst>
           <div className="w-full h-[1px] bg-gray-500 my-2">
           </div>
         </div>
 
-        
 
         <div className="w-full justify-start mt-10">
           <Naslov className="">
@@ -411,6 +441,23 @@ export default async function Home() {
 
           </div>
         </div>
+
+
+        <div className="w-full justify-start mt-10">
+          <Naslov className={''}>
+            Havarija kod kabina se retko dešava.
+          </Naslov>
+          <Tekst className={''}>
+            Kabine su pomoću sistema za klizanje i nošenja stakla odlično osigurane.Kod kliznih postoje osigurači koji se pričvršćuju na staklo a nalaze se direktno ispod šine po kojoj klizaju vrata i time osigurači ne daju vratima da ispadnu sa šine.
+          </Tekst>
+          <Tekst className={''}>
+            Kod kabina na šarke vrata drže šarke koje su pričvršćene za fiksno staklo ili zid tako da vrata ne mogu da spadnu.
+            U slučajima koja se desi havarija onda je to uglavnom razlog ne adekvatnog korišćenja, lupanje vratima.
+          </Tekst>
+          <div className="w-full h-[1px] bg-gray-500 my-2">
+          </div>
+        </div>
+        
 
         <div className="w-full justify-start mt-10">
           <Naslov className="">
@@ -507,6 +554,10 @@ export default async function Home() {
                 className="rounded-3xl"/>
               </CarouselItem>
               <CarouselItem className="md:basis-1/2 lg:basis-1/4 basis-1/1">
+                <Image src={'/bojaStaklaSiva2.jpg'} width={450} height={450} alt="Tus Kabina"
+                className="rounded-3xl"/>
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/4 basis-1/1">
                 <Image src={'/klizna6.jpg'} width={450} height={450} alt="Tus Kabina"
                 className="rounded-3xl"/>
               </CarouselItem>
@@ -550,30 +601,21 @@ export default async function Home() {
           
         </div>
 
-        <div className="w-full justify-start mt-10">
+        <div id="cene" className="w-full justify-start mt-10">
           <Naslov className={''}>
-            Kabina traje onoliko koliko je čuvate.
+            Kako se kreću cene.
           </Naslov>
           <Tekst className={''}>
-            Ovde nema mnogo toga da se priča, ako vam se sviđa da staklo bude u nekoj boji stavite tako, ako ne stavite providno.
-            Iskreno kod stakala u boji se mnogo više vidi kamenac, moguće je da se održava ali je teže nego providno.
-            Sa druge strane matirano staklo je dobro za kamenac jer se ne vidi toliko na mat staklu pošto je to staklo sa spoljne strane hrapavo matirano a iznutra je glatko i onda stranu unutra što kvasite neće se videti toliko kamenac.
-            Boja i matirano staklo su skuplje nego providno.
+            Cena je 90 eura po kvadratu sa montažom plus okov.
+          </Tekst>
+          <Tekst className={''}>
+            Ako hoćete da saznate cenu za vašu kabinu morate da nas kontaktirate.
           </Tekst>
           <div className="w-full h-[1px] bg-gray-500 my-2">
           </div>
         </div>
 
-        <div className="w-full justify-start mt-10">
-          <Naslov className={''}>
-            Montaža traje 1-3 sata.
-          </Naslov>
-          <Tekst className={''}>
-           Što se tiče montaže, kabina bude gotova za manje od 2 sata, čak se Paravan montira i za kraće vreme za 40-50min.
-          </Tekst>
-          <div className="w-full h-[1px] bg-gray-500 my-2">
-          </div>
-        </div>
+
         
         <div className="w-full justify-start mt-10">
           <Naslov className={''}>
@@ -594,38 +636,60 @@ export default async function Home() {
           <div className="w-full h-[1px] bg-gray-500 my-2">
           </div>
         </div>
+
+        <div className="w-full justify-start mt-10">
+          <Naslov className={''}>
+            Kako da naručite kabini po meri.
+          </Naslov>
+          <Tekst className={'pb-2'}>
+            Možete nas kontaktirati na broj telefona ili na mejl.
+          </Tekst>
+          <div className="mt-2">
+            <div className="flex md:flex-row flex-col gap-2 -mt-2">
+              <Link href={'tel:0603170707'} >
+                <button className="text-black bg-transparent px-8 py-2 rounded-3xl flex flex-row items-center gap-2
+                w-fit font-medium cursor-pointer border-black border text-[12px] md:text-[14px]">
+                  0603170707
+                  <span><FiPhone /></span>
+                </button>
+              </Link>
+              <button className="text-black bg-transparent px-8 py-2 rounded-3xl flex flex-row items-center gap-2
+              font-medium cursor-pointer border-black border text-[12px] md:text-[14px] w-fit">
+                verdestaklo011@gmail.com
+                <span><IoMailOutline /></span>
+              </button>
+            </div>
+          </div>
+          <div className="w-full h-[1px] bg-gray-500 my-2">
+          </div>
+        </div>
         
+        {/*
         <div className="w-full my-10">
           <h1 className="text-black text-4xl text-left pb-5 font-bold">Vi birate boju okova i stakla.</h1>
           <FaqKabine />
         </div>
+        */}
 
         <div className="w-full my-10">
-          <PodNaslov className={''}>
-              Naša radnja: Bulevar Kralja Aleksandra 546, Zvezdara
+          <div>
+            <PodNaslov className={''}>
+                Naša radnja: Bulevar Kralja Aleksandra 546, Zvezdara
             </PodNaslov>
-          <div className="flex md:flex-row flex-row gap-2 mt-1">
-            <Link href='https://www.google.com/maps/place/VERDE/@44.7796507,20.5235281,18.27z/data=!4m14!1m7!3m6!1s0x475a707f686851f7:0x916237bc5a376f02!2sVERDE!8m2!3d44.7794862!4d20.5254332!16s%2Fg%2F11_rpxb50!3m5!1s0x475a707f686851f7:0x916237bc5a376f02!8m2!3d44.7794862!4d20.5254332!16s%2Fg%2F11_rpxb50?entry=ttu&g_ep=EgoyMDI2MDIxNy4wIKXMDSoASAFQAw%3D%3D'
-            target='_blank'>
-              <button className="text-white bg-black px-8 py-2 rounded-3xl
-              font-medium cursor-pointer text-[12px] md:text-[14px]">
-                Google Mapa
-              </button>
-            </Link>
-            <Link href={'tel:0603170707'}>
-              <button className="text-black bg-transparent px-8 py-2 rounded-3xl flex flex-row items-center gap-2
-              font-medium cursor-pointer border-black border text-[12px] md:text-[14px]">
-                0603170707
-                <span><FiPhone /></span>
-              </button>
-            </Link>
-            <button className="text-black bg-transparent px-8 py-2 rounded-3xl flex flex-row items-center gap-2
-            font-medium cursor-pointer border-black border text-[12px] md:text-[14px]">
-              verdestaklo011@gmail.com
-              <span><IoMailOutline /></span>
-            </button>
-            <ButtonMailto label="Write me an E-Mail" mailto="mailto:verdestaklo011@gmail.com" />
+            <div className="flex md:flex-row flex-row gap-2 -mt-2">
+              <Link href='https://www.google.com/maps/place/VERDE/@44.7796507,20.5235281,18.27z/data=!4m14!1m7!3m6!1s0x475a707f686851f7:0x916237bc5a376f02!2sVERDE!8m2!3d44.7794862!4d20.5254332!16s%2Fg%2F11_rpxb50!3m5!1s0x475a707f686851f7:0x916237bc5a376f02!8m2!3d44.7794862!4d20.5254332!16s%2Fg%2F11_rpxb50?entry=ttu&g_ep=EgoyMDI2MDIxNy4wIKXMDSoASAFQAw%3D%3D'
+              target='_blank'>
+                <button className="text-white bg-black px-8 py-2 rounded-3xl
+                font-medium cursor-pointer text-[12px] md:text-[14px]">
+                  Google Mapa
+                </button>
+              </Link>
+              </div>
           </div>
+          
+            {/* <ButtonMailto label="Write me an E-Mail" mailto="mailto:verdestaklo011@gmail.com" />*/}
+
+          
         </div>
       {/*<MyComponentMaps /> */}
       

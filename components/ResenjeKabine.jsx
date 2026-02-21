@@ -8,7 +8,7 @@ import { AspectRatio } from './ui/aspect-ratio'
 function ResenjeKabine() {
   return (
     <div>
-      <ResenjaKabineSekcija image={'/Problem sa kosinom.jpg'}
+      <ResenjaKabineSekcija image={'/Problem sa kosinom2.jpg'}
       tekst={`Na ovoj slici vidimo da su ljudi imali problem sa kosinom, 
       kupatilo im se nalazilo u potkrovlju i nisu mogli nigde da nadju odgovarajuću 
       kabinu. Za ovakvu situaciju jedino rešenje jesu kabine po meri. Došli smo na
@@ -18,21 +18,21 @@ function ResenjeKabine() {
        a i unutra nije bilo mnogo mesta da bi se otvrala na unutra,klizna kabina je
         mnogo bolje rešenje ovde jer se otvara u svojoj dužini i ne zauzimadodatnog 
         prostora pri otvaranju.`} classname={'md:flex-row flex-col'}
-        link={'https://www.verdestaklorezac.com/tus-kabine/paravan'}
+        link={'https://www.verdestaklorezac.com/prodavnica/model-v03?variant=SREBRNA'}
         podnaslov={'Problem sa kosinom.'}/>
-        <ResenjaKabineSekcija image={'/Problem malo kupatilo.jpg'}
-      tekst={`Kada je problem jako malo kupatilo!
+        <ResenjaKabineSekcija image={'/Problem malo kupatilo2.jpg'}
+        tekst={`Kada je problem jako malo kupatilo!
         U ovom stanu su ljudi imali problem prvo jer im je kupatilo jako malo, i jos imaju lavabo i veš mašinu blizu kabine. Ovde nikako nije moglo da se stavi klizna kabina jer jednostavno nema dovoljno mesta da vrata klizaju i da se prodje, jer kabina je svega 70x70cm.
         Dogovorili smo se da napravimo ulaz da se otvaraju oba vrata i sa tim se dobija jako veliki i komotni prolaz u kabinu, vrata što se kače na zid se otvaraju unutra jer su manja i zauzimaju manje mesta, a vrata što idu na fiks se otvaraju spolja.
         Ovo je odlično iskoriščena kabina jer iako je kupatilo malo dobila se veoma funkcionalna kabina gde je komotno koristiti je kada se ulazi i izlazi, a i prilikom tuširanja ima mesta unutra.
         `} classname={'md:flex-row-reverse mt-10 flex-col'}
-        link={'https://www.verdestaklorezac.com/tus-kabine/paravan'}
+        link={'https://www.verdestaklorezac.com/prodavnica/modelv04?variant=SREBRNA'}
         podnaslov={'Problem sa malim kupatilom.'}/>
-        <ResenjaKabineSekcija image={'/Problem zidovi.jpg'}
+        <ResenjaKabineSekcija image={'/Problem zidovi2.jpg'}
         tekst={`Ovde nismo bili sigurni zašto je karemičar odlučio da napravio ovako mali zid ali dobro za sve ima rešenja. Za ovaj slučaj odlučili smo da stavimo kliznu kabinu umesto šarki. Kupatilo je dugačko ali je, da se vrata otvaraju na unutra ne bi bilo mesta takodje i spolja ista stvar, tako da klizna je najbolja varijanta u ovom slučaju. 
         Još jedan problem je taj što se na kraju kupatila,kod prozora, nalazi šolja koja ima ozidanu konzolu i izgleda kao neki zidić mali. Zato je fiksno staklo urezano za taj zidić da bi išlo staklo do kraja zida.`} 
         classname={'md:flex-row mt-10 flex-col'}
-        link={'https://www.verdestaklorezac.com/tus-kabine/paravan'}
+        link={'https://www.verdestaklorezac.com/prodavnica/model-v03?variant=SREBRNA'}
         podnaslov={'Neobični zidovi.'}/>
     </div>
   )
@@ -45,7 +45,7 @@ export function ResenjaKabineSekcija ({image,tekst,classname,link,podnaslov}) {
         <div className={`flex md:gap-10 items-start justify-between
         ${classname}`}>
                 <Image src={image} width={630} height={540} alt='tus kabina po meri'
-                className='rounded-4xl object-cover w-full md:h-full min-h-[250px]'/>
+                className='rounded-4xl object-cover lg:w-[40%] w-full max-h-[600px] min-h-[250px]'/>
 
             <div className='w-full py-10'>
                 <PodNaslov>{podnaslov}</PodNaslov>
