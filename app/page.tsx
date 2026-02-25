@@ -40,6 +40,12 @@ const overlays = ['Image 1'];
 
 const overlayStyle = {} as const;
 
+export const metadata = {
+  title: 'Tus kabine po meri',
+  description: 'Sve sto treba da znate o tus kabinama po meri, cene, kvalitet, modeli, montaza...',
+
+}
+
 export default async function Home() {
   const { data: products } = await sanityFetch({ query: getAllProductsQuery })
   return (
