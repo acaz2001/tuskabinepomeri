@@ -16,7 +16,7 @@ function ResenjeKabine() {
        slučaju kliznu kabinu a ne na šarke iz razloga jer su kupci imali lavabo
        (vidite na slici dole desno) pa vrata ne bi mogla da se otvaraju na spolja 
        a i unutra nije bilo mnogo mesta da bi se otvrala na unutra,klizna kabina je
-        mnogo bolje rešenje ovde jer se otvara u svojoj dužini i ne zauzimadodatnog 
+        mnogo bolje rešenje ovde jer se otvara u svojoj dužini i ne zauzima dodatnog 
         prostora pri otvaranju.`} classname={'md:flex-row flex-col'}
         link={'https://www.verdestaklorezac.com/prodavnica/model-v03?variant=SREBRNA'}
         podnaslov={'Problem sa kosinom.'}/>
@@ -29,7 +29,7 @@ function ResenjeKabine() {
         link={'https://www.verdestaklorezac.com/prodavnica/modelv04?variant=SREBRNA'}
         podnaslov={'Problem sa malim kupatilom.'}/>
         <ResenjaKabineSekcija image={'/Problem zidovi2.jpg'}
-        tekst={`Ovde nismo bili sigurni zašto je karemičar odlučio da napravio ovako mali zid ali dobro za sve ima rešenja. Za ovaj slučaj odlučili smo da stavimo kliznu kabinu umesto šarki. Kupatilo je dugačko ali je, da se vrata otvaraju na unutra ne bi bilo mesta takodje i spolja ista stvar, tako da klizna je najbolja varijanta u ovom slučaju. 
+        tekst={`Kupatilo ima dosta nekih pregradnih zidova. Za ovaj slučaj odlučili smo da stavimo kliznu kabinu umesto šarki. Kupatilo je dugačko i usko. Da se vrata na šarke otvaraju na unutra ne bi bilo mesta takodje i spolja ista stvar, tako da klizna je najbolja varijanta u ovom slučaju. 
         Još jedan problem je taj što se na kraju kupatila,kod prozora, nalazi šolja koja ima ozidanu konzolu i izgleda kao neki zidić mali. Zato je fiksno staklo urezano za taj zidić da bi išlo staklo do kraja zida.`} 
         classname={'md:flex-row mt-10 flex-col'}
         link={'https://www.verdestaklorezac.com/prodavnica/model-v03?variant=SREBRNA'}

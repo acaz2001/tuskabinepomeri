@@ -144,12 +144,15 @@ export default async function Home() {
 
         <div className="w-full justify-start mt-10">
           <Naslov className="">
-            Klizne kabine, najbolje!
+            Klizne kabine, često najbolje rešenje!
           </Naslov>
           <Tekst className="">
             Klizne kabine su se pokazale kao najbolje rešenje za kupatilo, ako imate uslova da je ugradite. 
             Zašto? Klizne kabine savršeno blokiraju vodu da ne izlazi van kabine, bolje nego kabine na šarke, zatvorena je sa svih strana i svaki prostor i gde bi mogla da prođe voda zatvoreno je gumama.
-            Bitna stvar je ta da sav sistem za klizanje koji se ugradjuje se nalazi iznad vaše glave i time nema kontakt sa vodom i nema šta da ga haba.
+            Bitna stvar je ta da sav sistem za klizanje koji se ugradjuje, nalazi se iznad vaše glave i time nema kontakt sa vodom i nema šta da ga haba.
+          </Tekst>
+          <Tekst className="">
+            Još jedna dobra stvar kod kliznih je ta da ne zahtevaju pri otvaranju dodatni prostor, vrata se otvaraju u toj dužini kolika je kabina.
           </Tekst>
           <Carousel className="my-5">
             <CarouselContent>
@@ -238,8 +241,14 @@ export default async function Home() {
           </Naslov>
           <Tekst className="">
             Kabina koja koristi metalne šarke za osiguravanje staklenih vrata, a osnovna karakteristika su vrata koja se otvaraju ka unutra ili napolje u zavisnoti od prostora, što je čini prilagodljivom različitim rasporedima kupatila. 
+          </Tekst>
+          <Tekst className="">
             Vrata su pričvršćena na fiksno staklo ili zid pomoću šarki, što mu omogućava da se okreće ka unutra ili ka spolja (neki modeli podržavaju otvaranje u oba smera).
+          </Tekst>
+          <Tekst className="">
             Kabine su opremljene magnetnom gumom i visokoelastičnim silikonskim gumama duž ivica kako bi se osiguralo čvrsto prianjanje kada su zatvorene, minimizirajući prskanje vode.
+          </Tekst>
+          <Tekst className="">
             Ranije smo spomenuli da klizne kabine bolje zaustavljaju vodu da ne izlazi napolje, razlog je to što kod kabina na šarke ne može u potpunosti da se zatvori deo kod šarki i onda kada se prska direktno na šarke može da prođe malo vode van kabine.
           </Tekst>
           <Carousel className="my-5">
@@ -330,7 +339,9 @@ export default async function Home() {
           <Tekst className="">
             Ako hoćete jednostavnost i da uštedite, a da imate pregradu u kupatilo onda je idealno rešenje paravan.
             Jedno staklo sa profilima vertikalno i horizontalno i na vrhu teleskop koji dodatno učvršćuje staklo i to je to.
-            Ljudima uvek preporučujemo da stavljaju paravan bar 100-110cm širine, da voda ne bi prskala van kabine, jer ako je male dužine paravan kada se tuširate jako onda hoće da prska dalje od paravana.
+          </Tekst>
+          <Tekst className="">
+            Kupcima uvek preporučujemo da stavljaju paravan bar 100-110cm širine, da voda ne bi prskala van kabine, jer ako je male dužine paravan kada se tuširate jako onda hoće da prska dalje od paravana.
           </Tekst>
           <Carousel className="my-5">
             <CarouselContent>
@@ -408,13 +419,13 @@ export default async function Home() {
             Montaža traje 1-3 sata.
           </Naslov>
           <Tekst className={''}>
-           Što se tiče montaže, kabina bude gotova za manje od 2 sata, čak se Paravan montira i za kraće vreme za 40-50min.
+           Što se tiče montaže, kabina bude gotova za 2-3 sata, čak se Paravan montira i za kraće vreme za 40-50min.
           </Tekst>
           <Tekst className={''}>
             Postupak montaže je takav da se prvo lepe U profili na pločice, nema bušenja, nakon toga ubacuju fiksna stakla u njih i silikoniraju se da bi se fiksirala i zaštitila kabina da ne curi voda.
           </Tekst>
           <Tekst className={''}>
-            Sledeće je da se montiraju vrata, ako su šarke onda se kače na fiks ili ako su klizna montira se prvo šina po kojoj klizaju vrata na fiksna stakla pa se onda kače vrata da klizaju.
+            Sledeće je da se montiraju vrata, ako su šarke onda se kače na fiks ili zid, a ako su klizna montira se prvo šina po kojoj klizaju vrata na fiksna stakla pa se onda kače vrata da klizaju.
           </Tekst>
           <Tekst className={''}>
             Kada je paravan u pitanju isto se prvo stavljaju U profili koji se lepe na pločice, ubacuje se staklo i silikonira, na kraju se stavlja teleskop koji se buši u zid i šrafi za staklo da time dodatno učvrsti staklo.
@@ -631,7 +642,7 @@ export default async function Home() {
             3. Rok za izradu kabine je 7-10 dana.
           </Tekst>
           <Tekst className={''}>
-            4. Montaža traje 1 do 3 sata.
+            4. Montaža.
           </Tekst>
           <div className="w-full h-[1px] bg-gray-500 my-2">
           </div>
