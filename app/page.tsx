@@ -51,7 +51,7 @@ export default async function Home() {
   return (
     <div className="bg-white w-full">
       <main className="max-w-[1950px] mx-auto md:px-10 px-5 pt-10 flex flex-col items-center 
-      justify-center">
+      justify-center relative">
         <div className="flex flex-col items-center py-10 mb-10 w-full rounded-4xl
          bg-[#f9f6fe]">
         <div className="mb-5">
@@ -148,7 +148,7 @@ export default async function Home() {
         </div>
 
 
-        <div className="w-full justify-start mt-10">
+        <div id="klizne" className="w-full justify-start mt-10">
           <Naslov className="">
             Klizne kabine, često najbolje rešenje!
           </Naslov>

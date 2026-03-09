@@ -40,7 +40,7 @@ function ResenjeKabine() {
 
 export default ResenjeKabine
 
-export function ResenjaKabineSekcija ({image,tekst,classname,link,podnaslov}) {
+export function ResenjaKabineSekcija ({image,tekst,classname,link,podnaslov,buttonText}) {
     return (
         <div className={`flex md:gap-10 items-start justify-between
         ${classname}`}>
@@ -55,7 +55,7 @@ export function ResenjaKabineSekcija ({image,tekst,classname,link,podnaslov}) {
                 <Link href={link} target='_blank'>
                     <button className="text-black bg-transparent px-8 py-2 rounded-3xl
             font-medium cursor-pointer border-black border mt-5">
-                        Vidite cenu na našem sajtu
+                        {buttonText ? buttonText :' Vidite cenu na našem sajtu'}
                     </button>
                 </Link>
                 

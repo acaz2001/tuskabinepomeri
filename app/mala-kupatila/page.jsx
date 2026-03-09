@@ -13,7 +13,7 @@ function MalaKupatila() {
         <main className="max-w-[1950px] mx-auto md:px-10 px-5 pt-10 flex flex-col items-center 
       justify-center relative">
             <HeroBanner naslov={'Moguće je da imate funkcionalnu kabinu u malom kupatilu.'}
-            tekst={'Lorem ip[usdfsdik sdjfksd jkdfs'}
+            tekst={'Tuš kabine po meri'}
             button1Tekst={'Početna stranica'}
             button1Link={'/'}
             className={'sticky md:px-5 px-2'}
@@ -51,6 +51,37 @@ function MalaKupatila() {
                 <Naslov>
                     Primeri da vidite kakva rešenja mogu da budu sa kabinama po meri kada je mali prostor.
                 </Naslov>
+                <ResenjaKabineSekcija image={'/sarke10.avif'}
+                    tekst={`
+                    Ako imate prostor slobodan od zida do zida 70-90cm nije moguće da stavite
+                    kliznu kabinu, nego samo na šarke. Na slici kabina je širine 80cm i to je
+                    savršeno da se stavi ovako jedan fiks od 30cm koji će držati vrata koja su
+                    50cm. 50cm je sasvim okej ulaz da mogu svi da prođu. 
+                    `} 
+                    classname={'md:flex-row flex-col mt-5'}
+                    link={'https://www.verdestaklorezac.com/prodavnica/modelv04?variant=SREBRNA'}
+                    podnaslov={'Kada je prolaz oko 80cm.'}
+                    buttonText= {'Vidite sve o kabinama na šarke'}
+                />
+                <ResenjaKabineSekcija image={'/klizna10.jpg'}
+                    tekst={`
+                    Za ovaj prolaz već može da se stavi klizna kabina sa jednim fiksnim delom i
+                    jednim vratima, sa ulazom nekih 47cm što je okej prolaz da svako ulazi
+                    i izlazi.
+                    Ovo je idealno rešenje jer klizne kabine ne zahtevaju dodatni prostor kada
+                    se otvaraju vrata, vrata ovde klizaju tj. otvaraju se i zatvaraju u svojoj
+                    dužini. Moglo je u ovom kupatilu da se stavi i kabina na šarke, u tom slučaju
+                    bi se vrata kačila na zid a sa druge strane bi bilo fiksno staklo koje bi služilo
+                    samo da prihvata vrata kada se zatvaraju. Onda bi se vrata ovde otvarala 
+                    na spolja jer unutra nema toliko mesta.
+                    
+
+                    `} 
+                    classname={'md:flex-row-reverse flex-col mt-5'}
+                    link={'/#klizne'}
+                    podnaslov={'Kada je prolaz oko 100cm.'}
+                    buttonText= {'Vidite sve o kliznim kabinama'}
+                />
                 <ResenjaKabineSekcija image={'/Problem malo kupatilo2.jpg'}
                     tekst={`Kada je problem jako malo kupatilo!
                     U ovom stanu su ljudi imali problem prvo jer im je kupatilo jako malo, i jos imaju lavabo i veš mašinu blizu kabine. Ovde nikako nije moglo da se stavi klizna kabina jer jednostavno nema dovoljno mesta da vrata klizaju i da se prodje, jer kabina je svega 80x70cm.
@@ -74,26 +105,7 @@ function MalaKupatila() {
                     link={'https://www.verdestaklorezac.com/prodavnica/modelv04?variant=SREBRNA'}
                     podnaslov={'Usko kupatilo.'}
                 />
-                <ResenjaKabineSekcija image={'/sarke10.avif'}
-                    tekst={`
-                    Ako imate prostor slobodan od zida do zida 70-90cm nije moguće da stavite
-                    kliznu kabinu, nego samo na šarke. Na slici kabina je širine 80cm i to je
-                    savršeno da se stavi ovako jedan fiks od 30cm koji će držati vrata koja su
-                    50cm. 50cm je sasvim okej ulaz da mogu svi da prođu. 
-                    `} 
-                    classname={'md:flex-row flex-col mt-5'}
-                    link={'https://www.verdestaklorezac.com/prodavnica/modelv04?variant=SREBRNA'}
-                    podnaslov={'Kada je prolaz oko 80cm.'}
-                />
-                <ResenjaKabineSekcija image={'/klizna10.jpg'}
-                    tekst={`
-                    Za ovaj prolaz već može da se stavi klizna kabina i ulaz bi bio nekih
-                    47cm.   
-                    `} 
-                    classname={'md:flex-row-reverse flex-col mt-5'}
-                    link={'https://www.verdestaklorezac.com/prodavnica/modelv04?variant=SREBRNA'}
-                    podnaslov={'Kada je prolaz oko 100cm.'}
-                />
+                
             </div>
 
         <div className="w-full justify-start mt-10">
