@@ -28,6 +28,7 @@ import Link from "next/link";
 import { FiPhone } from "react-icons/fi";
 import { IoMailOutline } from "react-icons/io5";
 import ButtonMailto from '../components/ButtonMailto'
+import Script from "next/script";
 
 
 
@@ -43,13 +44,31 @@ const overlayStyle = {} as const;
 export const metadata = {
   title: 'Tus kabine po meri',
   description: 'Sve sto treba da znate o tus kabinama po meri, cene, kvalitet, modeli, montaza...',
-
+  keywords: ['tus kabina po meri','tus kabine po meri cena','staklo za tus kabine po meri cena','staklo za tus kabinu po meri cena']
 }
+
+const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    'headline': 'Tus kabine po meri',
+    'description': 'Sve sto treba da znate o tus kabinama po meri, cene, vrste kabina, okov ...',
+    'datePublished': '3.13.2026',
+    'keywords': ['tus kabina po meri','tus kabine po meri cena','staklo za tus kabine po meri cena','staklo za tus kabinu po meri cena'],
+    'material': 'glass',
+    'owner': 'Staklorezac Verde'
+  };
 
 export default async function Home() {
   const { data: products } = await sanityFetch({ query: getAllProductsQuery })
   return (
     <div className="bg-white w-full">
+      <Script
+      id="jsonLd"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c')
+        }}
+      />
       <main className="max-w-[1950px] mx-auto md:px-10 px-5 pt-10 flex flex-col items-center 
       justify-center relative">
         <div className="flex flex-col items-center py-10 mb-10 w-full rounded-4xl
