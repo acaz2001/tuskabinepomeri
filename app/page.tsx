@@ -92,7 +92,7 @@ export default async function Home() {
         
         
         {/* Buttons*/}
-        <div className="flex md:flex-row flex-col gap-2 mt-5">
+        <div className="flex md:flex-row flex-col gap-2 mt-5 items-center">
           <Link href={'/#cene'}>
             <button className="text-white bg-black px-8 py-2 rounded-3xl
             font-medium cursor-pointer text-[12px] md:text-[14px]"
@@ -106,7 +106,15 @@ export default async function Home() {
               Gotovi modeli
             </button>
           </Link>
+          <Link href={'/mala-kupatila'} target='_blank'>
+            <button className="text-white bg-black px-8 py-2 rounded-3xl
+            font-medium cursor-pointer text-[12px] md:text-[14px]"
+            >
+              Kabine ako imate malo kupatilo
+            </button>
+          </Link>
         </div>
+        {/*END Buttons*/}
         </div>
 
         {/*Gallery 
@@ -149,7 +157,7 @@ export default async function Home() {
         </div> 
 
 
-        <div className="w-full justify-start mt-10">
+        <div className="w-full justify-start mt-20">
           <Naslov className="-mb-8">
             Koje sve kabine postoje i kako da izaberete savršenu za vas.
           </Naslov>
