@@ -13,7 +13,7 @@ function MalaKupatila() {
         <main className="max-w-[1950px] mx-auto md:px-10 px-5 pt-10 flex flex-col items-center 
       justify-center relative">
             <HeroBanner naslov={'Moguće je da imate funkcionalnu kabinu u malom kupatilu.'}
-            tekst={'Tuš kabine po meri'}
+            tekst={'Danas svako kupatilo malo ili veliko može da ima svoju tuš kabinu.'}
             button1Tekst={'Početna stranica'}
             button1Link={'/'}
             className={'sticky md:px-5 px-2'}
