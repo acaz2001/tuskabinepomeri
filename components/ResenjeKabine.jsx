@@ -7,7 +7,7 @@ import { AspectRatio } from './ui/aspect-ratio'
 
 function ResenjeKabine() {
   return (
-    <div>
+    <div className='mt-5'>
       <ResenjaKabineSekcija image={'/Problem sa kosinom2.jpg'}
       tekst={`Na ovoj slici vidimo da su ljudi imali problem sa kosinom, 
       kupatilo im se nalazilo u potkrovlju i nisu mogli nigde da nadju odgovarajuću 
