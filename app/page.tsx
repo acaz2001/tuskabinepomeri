@@ -29,6 +29,7 @@ import { FiPhone } from "react-icons/fi";
 import { IoMailOutline } from "react-icons/io5";
 import ButtonMailto from '../components/ButtonMailto'
 import Script from "next/script";
+import ProizvodPoMeri from "../components/forms/ProizvodPoMeri";
 
 
 
@@ -703,6 +704,10 @@ export default async function Home() {
                 <span><IoMailOutline /></span>
               </button>
             </div>
+          </div>
+          <div className="mt-10">
+
+            <ProizvodPoMeri />
           </div>
           <div className="w-full h-[1px] bg-gray-500 my-2">
           </div>
