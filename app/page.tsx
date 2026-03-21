@@ -359,7 +359,7 @@ export default async function Home() {
             <Link href={'https://www.verdestaklorezac.com/tus-kabine/sarke'} target='_blank'>
                 <button className="text-white bg-black px-8 py-2 rounded-3xl
                 font-medium cursor-pointer text-[14px] md:text-[16px] mt-4">
-                  Ovde možete da vidite sve modele kliznih kabina i cene.
+                  Ovde možete da vidite sve modele kabina na šarke i cene.
                 </button>
             </Link>
 
@@ -436,7 +436,7 @@ export default async function Home() {
             <Link href={'https://www.verdestaklorezac.com/tus-kabine/paravan'} target='_blank'>
                 <button className="text-white bg-black px-8 py-2 rounded-3xl
                 font-medium cursor-pointer text-[14px] md:text-[16px] mt-4">
-                  Ovde možete da vidite sve modele kliznih kabina i cene.
+                  Ovde možete da vidite sve modele paravana i cene.
                 </button>
             </Link>
 
@@ -706,6 +706,18 @@ export default async function Home() {
             </div>
           </div>
           <div className="mt-10">
+            <PodNaslov className={''}>
+              Popunite formu da dobijete ponudu za tuš kabinu po meri.
+            </PodNaslov>
+            <Tekst className={'-mt-2'}>
+              Unesite potrebne podatke, na kraju kliknite na dugme "Pošaljite upit"
+              da pošaljete upit.
+            </Tekst>
+            <Tekst className={'mb-5'}>
+              U roku od 2-3 sata dobićete pounudu na vaš mejl ili broj telefona.
+
+
+            </Tekst>
 
             <ProizvodPoMeri />
           </div>

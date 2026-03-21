@@ -102,7 +102,7 @@ function ProizvodPoMeriForma({}) {
                   required
                 />
               
-                <label htmlFor="phone" className='justify-items-start text-[0.95rem] font-medium'>Broj telefona*</label>
+                <label htmlFor="phone" className='justify-items-start text-[0.95rem] font-medium'>Broj telefona</label>
                 <input 
                   className='bg-[#f9f6fe] p-2.5 w-[100%] rounded-lg text-[0.9rem]'
                   type="tel" 
