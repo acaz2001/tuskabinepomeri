@@ -127,3 +127,127 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+.arrow {
+  transform-origin: top left;
+  transition: transform 0.4s ease;
+}
+@media (max-width: 2500px)  {
+      .arrow {
+        transform: scale(0.8);
+        transform-origin: bottom left;
+      }
+      .search-overlay {
+        left: 28%;
+      }
+}
+@media (max-width: 2222px) {
+      .arrow {
+        transform: scale(0.7);
+        transform-origin: bottom left;
+        bottom: 12px;
+      }
+}
+@media (max-width: 2098px) {
+      .arrow {
+        transform: scale(1);
+        transform-origin: bottom left;
+      }
+}
+@media (max-width: 1680px) {
+      .arrow {
+        transform: scale(0.9);
+        transform-origin: bottom left;
+      }
+}
+@media (max-width: 1530px) {
+      .arrow {
+        transform: scale(1);
+        transform-origin: bottom left;
+      }
+}
+@media (max-width: 1300px) and (min-width:1025) {
+      .arrow {
+        transform: scale(0.85);
+        transform-origin: bottom left;
+        margin-bottom: 0.4rem
+      }
+}
+@media (max-width: 1900px) and (min-width: 1470px) {
+  body {
+    padding: 20px 140px;
+    .arrow {
+    bottom: 2.5%;
+    left: 86.5%;
+    transform: scale(0.95);
+  };
+  }
+}
+@media (max-width: 1470px) and (min-width: 1254px) {
+  .arrow {
+    bottom: 2.9%;
+    left: 86%;
+    transform: scale(0.97);
+  };
+}
+@media (max-width: 1254px) and (min-width: 1130px) {
+  .arrow {
+    bottom: 0.5%;
+    left: 86.5%;
+    transform: scale(0.85);
+  };
+}
+@media (max-width: 1130px) and (min-width: 1025px) {
+  .arrow {
+    bottom: 1.8%;
+    left: 86.5%;
+    transform: scale(0.75);
+  };
+}
+@media (max-width: 1025px) {
+  .arrow {
+    transform: scale(1);
+  }
+}
+@media (max-width: 767px) and (min-width: 570px) {
+    .arrow {
+    bottom: 2%;
+    left: 86.5%;  
+    transform: scale(1.5);
+
+  };
+}
+@media (max-width: 430px) and (min-width: 361px) {
+    .arrow {
+    bottom: 2.5%;
+    left: 86.5%;  
+    transform: scale(1);
+  };
+  .arrow-collection {
+    right: 4%;
+    transform: translateX(-2px);
+  }
+}
+@media (max-width: 361px) and (min-width: 200px) {
+    .arrow {
+    bottom: 15px;
+    left: 86.5%;  
+    transform: scale(0.75);
+  };
+  .arrow-collection {
+    right: 40%;
+    transform: translateX(6px);
+  }
+}
+.collection-arrow {
+    transform: translateX(2%)
+  }
+
+.product {
+  mask-image: url('/svgProduct.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: right top;
+  
+}

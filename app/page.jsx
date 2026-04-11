@@ -2,8 +2,6 @@ import Image from "next/image";
 import {FeaturedImageGallery} from '../components/FeaturedImageGallery'
 import ProductList from '../components/productList'
 import { sanityFetch } from '../sanity/lib/live'
-import { getAllProductsQuery } from '../sanity/lib/queries'
-import getAllProducts from "@/sanity/lib/getAllProducts";
 import VrsteKabina from "../components/VrsteKabina"
 import { Card, CardContent } from "../components/ui/card"
 import Kontent, { Naslov, PodNaslov, Tekst } from "../components/typography/Kontent"
@@ -30,7 +28,10 @@ import { IoMailOutline } from "react-icons/io5";
 import ButtonMailto from '../components/ButtonMailto'
 import Script from "next/script";
 import ProizvodPoMeri from "../components/forms/ProizvodPoMeri";
-
+import { promises as fs } from 'fs';
+import Proizvod from '../components/Proizvod'
+import ProizvodSarke from '../components/listaProzvoda/ProizvodSarke'
+import ProizvodParavan from '../components/listaProzvoda/ProizvodParavan'
 
 
 const images = [
@@ -40,7 +41,7 @@ const images = [
 
 const overlays = ['Image 1'];
 
-const overlayStyle = {} as const;
+const overlayStyle = {};
 
 export const metadata = {
   title: 'Tus kabine po meri',
@@ -60,7 +61,19 @@ const jsonLd = {
   };
 
 export default async function Home() {
-  const { data: products } = await sanityFetch({ query: getAllProductsQuery })
+  const file = await fs.readFile(process.cwd() + '/data/kabine.json');
+  const data = JSON.parse(file);
+
+  const fileSarke = await fs.readFile(process.cwd() + '/data/kabineSarke.json');
+  const dataSarke = JSON.parse(fileSarke);
+
+  const fileParavan = await fs.readFile(process.cwd() + '/data/kabineParavan.json');
+  const dataParavan = JSON.parse(fileParavan);
+
+
+  
+  
+
   return (
     <div className="bg-white w-full">
       <Script
@@ -188,6 +201,9 @@ export default async function Home() {
           <Tekst className="">
             Još jedna dobra stvar kod kliznih je ta da ne zahtevaju pri otvaranju dodatni prostor, vrata se otvaraju u toj dužini kolika je kabina.
           </Tekst>
+
+          
+
           <Carousel className="my-5">
             <CarouselContent>
               <CarouselItem className="md:basis-1/2 lg:basis-1/4 basis-1/1">
@@ -270,6 +286,31 @@ export default async function Home() {
             </div>
           </div>
 
+
+          <PodNaslov className={'md:pt-20 pt-10'}>
+            Primeri cena kliznih kabina
+          </PodNaslov>
+          <Tekst>
+            Klikom na kabinu možete da otvorite novu stranicu koja prikazuje
+            birani model i cene sa određenim dimenzijama.
+          </Tekst>
+          <Link href={'#po-meri'}>
+            <button className="text-white bg-black px-8 py-2 rounded-3xl
+                  font-medium cursor-pointer text-[14px] md:text-[16px] mt-2">
+            Pošaljite upit za cenu izrade kabine po meri.      
+            </button>
+          </Link>
+          <div className="mt-5 grid lg:grid-cols-3 lg:grid-rows-1 gap-5 
+          md:grid-cols-2 grid-cols-1">
+            <Proizvod data={data} />
+          </div>
+          <div className="w-full h-[1px] bg-gray-500 my-6 mb-6">
+
+          </div>
+
+
+          
+
           <Naslov className="mt-10">
             Kabine na šarke.
           </Naslov>
@@ -323,6 +364,8 @@ export default async function Home() {
             <CarouselPrevious className="ml-3"/>
             <CarouselNext className="mr-3"/>
           </Carousel>
+
+          
           
           <div className="flex md:flex-row flex-col md:gap-0 gap-5 items-start my-7">
             <Image src={'/dijagramsarke.jpg'} width={610} height={574} alt="Dijagram Sarke Kabine"/>
@@ -364,6 +407,28 @@ export default async function Home() {
             </Link>
 
             </div>
+          </div>
+          <PodNaslov className={'md:pt-20 pt-10'}>
+            Primeri cena kabina na šarke.
+          </PodNaslov>
+          <Tekst>
+            Klikom na kabinu možete da otvorite novu stranicu koja prikazuje
+            birani model i cene sa određenim dimenzijama.
+          </Tekst>
+          <Link href={'#po-meri'}>
+            <button className="text-white bg-black px-8 py-2 rounded-3xl
+                  font-medium cursor-pointer text-[14px] md:text-[16px] mt-2">
+            Pošaljite upit za cenu izrade kabine po meri.      
+            </button>
+          </Link>
+          <div className="grid lg:grid-cols-3 lg:grid-rows-2 gap-5 pt-10
+          md:grid-cols-2 
+          grid-cols-1 grid-rows-auto
+          ">
+            <ProizvodSarke data={dataSarke}/>
+          </div>
+          <div className="w-full h-[1px] bg-gray-500 my-4 ">
+
           </div>
 
 
@@ -442,10 +507,29 @@ export default async function Home() {
 
             </div>
           </div>
+
+          <PodNaslov className={'md:pt-20 pt-10'}>
+            Primeri cena paravana.
+          </PodNaslov>
+          <Tekst>
+            Klikom na kabinu možete da otvorite novu stranicu koja prikazuje
+            birani model i cene sa određenim dimenzijama.
+          </Tekst>
+          <Link href={'#po-meri'}>
+            <button className="text-white bg-black px-8 py-2 rounded-3xl
+                  font-medium cursor-pointer text-[14px] md:text-[16px] mt-2">
+            Pošaljite upit za cenu izrade paravana po meri.      
+            </button>
+          </Link>
+          <div className="mt-5 grid lg:grid-cols-3 lg:grid-rows-1 gap-5
+          md:grid-cols-2 grid-cols-1">
+            <ProizvodParavan data={dataParavan}/>
+          </div>
+
           
         <div className="w-full h-[1px] bg-gray-500 my-2">
 
-          </div>
+        </div>
         </div>
 
         <div className="w-full justify-start mt-10">
@@ -705,7 +789,7 @@ export default async function Home() {
               </button>
             </div>
           </div>
-          <div className="mt-10">
+          <div id="po-meri" className="mt-10">
             <PodNaslov className={''}>
               Popunite formu da dobijete ponudu za tuš kabinu po meri.
             </PodNaslov>

@@ -21,14 +21,17 @@ function ProizvodPoMeriForma({}) {
   const [okovBoja, setOkovBoja] = useState("Siva");
   const [bojaStakla, setBojaStakla] = useState("Providno")
   const [vrstaKabine, setVrstaKabine] = useState("Paravan")
-  const [modelKabine, setModelKabine] = useState()
+  const [modelKabine, setModelKabine] = useState("V25")
   const [bojaRama, setBojaRama] = useState("");
 
+  console.log("Model kabije je", modelKabine)
+
   useEffect(() => {
-    if (vrstaKabine === 'Paravan') {
-      setModelKabine === ''
+    if (vrstaKabine === 'Sarke') {
+      setModelKabine === 'V10'
     }
-  })
+    console.log ('UseEffect MOdel kabine je', modelKabine)
+  },[modelKabine])
 
 
   const handleSubmit = async (e) => {
@@ -77,9 +80,6 @@ function ProizvodPoMeriForma({}) {
   //    return <p>Thanks for joining!</p>;
  //     
  // }
-
- console.log ('Vrsta kabine ', vrstaKabine)
- console.log ('Model kabine ', modelKabine)
   return (
     <>
     {/*

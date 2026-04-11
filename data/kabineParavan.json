@@ -1,0 +1,30 @@
+{
+    "kabina": [
+        {
+            "id": 1,
+            "imeModela" : "Model V25",
+            "vrstaKabine": "Paravan",
+            "cenaModela": 12000,
+            "slikaModela": "/tus-kabina-paravan-Model-V25.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/model-v25?variant=SREBRNA"
+        },
+    
+        {
+            "id": 2,
+            "imeModela" : "Model V27",
+            "vrstaKabine": "Paravan",
+            "cenaModela": 19000,
+            "slikaModela": "/tus-kabina-paravan-Model-V27.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/model-v27?variant=SREBRNA"
+        },
+
+        {
+            "id": 3,
+            "imeModela" : "Model V30",
+            "vrstaKabine": "Paravan",
+            "cenaModela": 10000,
+            "slikaModela": "/tus-kabina-paravan-Model-V30.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/model-v30?variant=SREBRNA"
+        }
+    ]
+}

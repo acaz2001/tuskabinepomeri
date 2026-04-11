@@ -1,0 +1,30 @@
+{
+    "kabina": [
+        {
+            "id": 1,
+            "imeModela" : "Model V02",
+            "vrstaKabine": "Klizna",
+            "cenaModela": 25000,
+            "slikaModela": "/v15.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/model-v02?variant=SREBRNA"
+        },
+    
+        {
+            "id": 2,
+            "imeModela" : "Model V01",
+            "vrstaKabine": "Klizna",
+            "cenaModela": 41000,
+            "slikaModela": "/tus-kabina-klizna-dupla.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/model-v01?variant=SREBRNA"
+        },
+
+        {
+            "id": 3,
+            "imeModela" : "Model V03",
+            "vrstaKabine": "Klizna",
+            "cenaModela": 35000,
+            "slikaModela": "/tus-kabina-klizna.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/model-v03?variant=SREBRNA"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "kabina": [
+        {
+            "id": 1,
+            "imeModela" : "Model V08",
+            "vrstaKabine": "Sarke",
+            "cenaModela": 26000,
+            "slikaModela": "/tus-kabina-sarke-Model-V08.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/modelv08?variant=SREBRNA"
+        },
+    
+        {
+            "id": 2,
+            "imeModela" : "Model V10",
+            "vrstaKabine": "Sarke",
+            "cenaModela": 35000,
+            "slikaModela": "/tus-kabina-sarke-Model-V10.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/model-v04?variant=SREBRNA"
+        },
+
+        {
+            "id": 3,
+            "imeModela" : "Model V05",
+            "vrstaKabine": "Sarke",
+            "cenaModela": 23000,
+            "slikaModela": "/tus-kabina-sarke-Model-V05.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/model-v05?variant=SREBRNA"
+        },
+        {
+            "id": 4,
+            "imeModela" : "Model V07",
+            "vrstaKabine": "Sarke",
+            "cenaModela": 30000,
+            "slikaModela": "/tus-kabina-sarke-Model-V07.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/model-v07?variant=SREBRNA"
+        },
+        {
+            "id": 5,
+            "imeModela" : "Model V09",
+            "vrstaKabine": "Sarke",
+            "cenaModela": 14000,
+            "slikaModela": "/tus-kabina-sarke-Model-V09.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/model-v09?variant=SREBRNA"
+        },
+        {
+            "id": 6,
+            "imeModela" : "Model V04",
+            "vrstaKabine": "Sarke",
+            "cenaModela": 47000,
+            "slikaModela": "/tus-kabina-sarke-Model-V04.png",
+            "link": "https://www.verdestaklorezac.com/prodavnica/modelv04?variant=SREBRNA"
+        }
+    ]
+}
