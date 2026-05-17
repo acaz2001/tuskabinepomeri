@@ -17,7 +17,7 @@ function VrsteKabina() {
       <section className='collection group bg-[#f9f6fe] relative w-[100%]  
       lg:w-[100%] md:w-[100%] h-[275px] rounded-2xl flex 
       flex-col items-center justify-items-start cursor-pointer'>
-        <Link href="https://www.verdestaklorezac.com/tus-kabine/klizne" target='_blank'>
+        <Link href="/#klizne">
         <h1 className=
         'pt-1 text-[3.8rem] font-semibold transition-all duration-400 ease-in-out group-hover:scale-[1.05]'>
         Klizne</h1>
@@ -39,7 +39,7 @@ function VrsteKabina() {
         <div className='group relative  w-full'>
         <section className='collection group bg-[#f9f6fe] relative w-[100%]  lg:w-[100%] md:w-[100%] h-[275px] rounded-2xl flex flex-col
         justify-items-center items-center cursor-pointer py-2'>
-          <Link href="https://www.verdestaklorezac.com/tus-kabine/sarke" target='_blank'>
+          <Link href="/#sarke">
           <h1 className='text-[3.8rem] font-semibold transition-all duration-400 ease-in-out group-hover:scale-[1.05]'>
             Šarke</h1>
           <Image width={224} height={224} alt='tus-kabina-sarke' className='absolute top-5 w-[14rem] translate-x-[-8%]' src={"/tus-kabina-sarke.png"}></Image>
@@ -59,7 +59,7 @@ function VrsteKabina() {
       <div className='group relative  w-full'>
       <section className='collection group bg-[#f9f6fe] relative w-[100%]  lg:w-[100%] md:w-[100%] h-[275px] 
       rounded-2xl flex flex-col items-center justify-items-start cursor-pointer'>
-        <Link href="https://www.verdestaklorezac.com/tus-kabine/paravan" target='_blank'>
+        <Link href="/#paravan">
         <h1 className='text-[3.8rem] font-semibold transition-all duration-400 ease-in-out 
         group-hover:scale-[1.05]'>
           Paravani

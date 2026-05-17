@@ -101,7 +101,7 @@ async function ParavaniZaTusKabinePage() {
                     Modeli paravana i cene.
                 </Naslov>
                 <Tekst>
-                    Klikom na model vodi vas na određeni model sa merama i cenama.
+                    Klikom na model vodi vas na birani model sa merama i cenama.
                 </Tekst>
             </div>
 
@@ -196,7 +196,7 @@ async function ParavaniZaTusKabinePage() {
 
             <div className="w-full justify-start mt-10">
                 <Naslov className="">
-                    Vi birate boju okova i stakla.
+                    Okov u crnoj i zlatnoj boji.
                 </Naslov>
                 <Tekst className="text-black">
                     Postoje kupatila u svakavnim bojama pločica, tamnih ili svetlih boja, kod nekih kupatila tamnih boja pločica i na primer crnih slavina, elemenata itd. najlepše ide crni okov za tuš kabinu.
@@ -242,80 +242,7 @@ async function ParavaniZaTusKabinePage() {
                 </div>
             </div>
 
-            <div className="w-full justify-start mt-18">
-                <Naslov>
-                    Montaža traje 40 min - 1 sat.
-                </Naslov>
-                <Tekst>
-                    Postupak montaže je takav da se prvo lepe U profili na pločice, 
-                    nema bušenja, nakon toga ubacuju fiksna stakla u njih i silikoniraju 
-                    se da bi se fiksirala i zaštitila kabina da ne curi voda.
-                </Tekst>
-                <Tekst>
-                    Sledeće je da se montiraju vrata, ako su šarke onda se kače na fiks
-                    ili zid, a ako su klizna montira se prvo šina po kojoj klizaju vrata
-                    na fiksna stakla pa se onda kače vrata da klizaju.
-                </Tekst>
-                <Tekst>
-                    Kada je paravan u pitanju isto se prvo stavljaju U profili koji se
-                    lepe na pločice, ubacuje se staklo i silikonira, na kraju se 
-                    stavlja teleskop koji se buši u zid i šrafi za staklo da time dodatno 
-                    učvrsti staklo.
-                </Tekst>
-                <div className="w-full h-[1px] bg-gray-500 my-2">
-                </div>
-            </div>
-            
-            <div className="w-full justify-start mt-10">
-                <Naslov className="">
-                    Dugotrajnost paravana.
-                </Naslov>
-                <Tekst className="text-black">
-                    Ako ste odgovorna osoba i pazite da ne lupate vratima,čistite redovno kabinu od kamenca njena dugotrajnost će vam biti neograničena.          
-                </Tekst>
-                <Tekst className="text-black">
-                    Staklo koje se montira je pod obavezno kaljeno, to znači da je to staklo ojačano od običnog i mnogo je otpornije na udarce, daje sigurnost od povreda prilikom loma jer i ako se desi da pukne, staklo će pući na mnogo malih komadića 8x8mm.        
-                </Tekst>
-                <Tekst className="text-black">
-                    Okov je od prohroma odličnog kvaliteta, može se plastificirati u bilo koju boju (najčešće je to crna i zlatna boja) time možete još više uklopiti kabinu u vaš enterijer ako vam se to svidja.
-                </Tekst>
-                <div className="w-full h-[1px] bg-gray-500 my-2">
-
-                </div>
-            </div>
-
-            <div className="w-full justify-start mt-8">
-                <Naslov className="mt-10">
-              Koje staklo ugrađujemo na kabinama?
-                </Naslov>
-                <Tekst className="text-black">
-                    Svako staklo na svim kabinama je debljine 8mm. Staklo je kaljeno zbog sigurnosti i izdržljivosti. Staklo može biti i u boji: braon, sivo, matirano.
-                </Tekst>
-                <div className="flex md:flex-row flex-col gap-5 mt-5">
-                    <Image src={'/parsolbronza.jpg'} width={351} height={351} alt="parsol staklo" className="rounded-3xl"/>
-                    <Image src={'/parsol1.jpg'} width={351} height={351} alt="parsol staklo" className="rounded-3xl"/>
-                    <Image src={'/717zX2y+cRL.jpg'} width={351} height={351} alt="parsol staklo" className="rounded-3xl"/>
-                </div>
-                <PodNaslov className={'mt-5'}>
-                    Šta znači kaljeno staklo?
-                </PodNaslov>
-                <Tekst className="text-black">
-                    Kada je staklo kaljeno to znači da je staklo prošlo kroz mašinski proces zagrevanja na 650° C  i naglog hlađenja. Ovaj proces proizvodnje ga čini jačim i otpornijim na toplotu i do 400-500% od običnog stakla. Cilj procesa kaljenja je prvenstveno poboljšanje trajnost i konstrukcije i toplotne čvrstoće stakla, čime se povećava njegova otpornost i sposobnost da izdrže toplinu. 
-                </Tekst>
-                <PodNaslov className={'mt-5'}>
-                    Prednosti kaljenog stakla.
-                </PodNaslov>
-                <Tekst className="text-black ">
-                    Kaljeno staklo je i do pet puta jače i izdržljivije od običnog stakla.
-                </Tekst>
-                <Tekst className="text-black ">
-                    Još jedna prednost kaljenog stakla jeste sigurnost, ukoliko dođe do lomljenja, staklo se rasprši u hiljadu komadića. Čak i ukoliko dođe do lomljenja, zbog procesa kaljenja komadi će biti jako mali i tupi i samim tim znatno bezbedniji nego da su delovi običnog stakla.
-                </Tekst>
-                <div className="w-full h-[1px] bg-gray-500 my-2">
-                </div>
-            </div>
-
-            <div className="w-full justify-start mt-10">
+        <div className="w-full justify-start mt-10">
           <Naslov className="">
             Staklo može biti i u boji.
           </Naslov>
@@ -352,7 +279,78 @@ async function ParavaniZaTusKabinePage() {
             <CarouselPrevious className="ml-3"/>
             <CarouselNext className="mr-3"/>
           </Carousel>
-          </div>
+        </div>
+
+
+        <div className="w-full justify-start mt-8">
+                <Naslov className="mt-10">
+              Koje staklo ugrađujemo na paravanima?
+                </Naslov>
+                <Tekst className="text-black">
+                    Staklo je debljine 8mm, kaljeno zbog sigurnosti i izdržljivosti. Staklo može biti i u boji: braon, sivo, matirano.
+                </Tekst>
+                <div className="flex md:flex-row flex-col gap-5 mt-5">
+                    <Image src={'/parsolbronza.jpg'} width={351} height={351} alt="parsol staklo" className="rounded-3xl"/>
+                    <Image src={'/parsol1.jpg'} width={351} height={351} alt="parsol staklo" className="rounded-3xl"/>
+                    <Image src={'/717zX2y+cRL.jpg'} width={351} height={351} alt="parsol staklo" className="rounded-3xl"/>
+                </div>
+                <PodNaslov className={'mt-5'}>
+                    Šta znači kaljeno staklo?
+                </PodNaslov>
+                <Tekst className="text-black">
+                    Kada je staklo kaljeno to znači da je staklo prošlo kroz mašinski proces zagrevanja na 650° C  i naglog hlađenja. Ovaj proces proizvodnje ga čini jačim i otpornijim na toplotu i do 400-500% od običnog stakla. Cilj procesa kaljenja je prvenstveno poboljšanje trajnost i konstrukcije i toplotne čvrstoće stakla, čime se povećava njegova otpornost i sposobnost da izdrže toplinu. 
+                </Tekst>
+                <PodNaslov className={'mt-5'}>
+                    Prednosti kaljenog stakla.
+                </PodNaslov>
+                <Tekst className="text-black ">
+                    Kaljeno staklo je i do pet puta jače i izdržljivije od običnog stakla.
+                </Tekst>
+                <Tekst className="text-black ">
+                    Još jedna prednost kaljenog stakla jeste sigurnost, ukoliko dođe do lomljenja, staklo se rasprši u hiljadu komadića. Čak i ukoliko dođe do lomljenja, zbog procesa kaljenja komadi će biti jako mali i tupi i samim tim znatno bezbedniji nego da su delovi običnog stakla.
+                </Tekst>
+                <div className="w-full h-[1px] bg-gray-500 my-2">
+                </div>
+        </div>
+
+
+
+        <div className="w-full justify-start mt-18">
+                <Naslov>
+                    Montaža traje 40 min - 1 sat.
+                </Naslov>
+                <Tekst>
+                    Kada je paravan u pitanju isto se prvo stavljaju U profili koji se
+                    lepe na pločice, ubacuje se staklo i silikonira, na kraju se 
+                    stavlja teleskop koji se buši u zid i šrafi za staklo da time dodatno 
+                    učvrsti staklo.
+                </Tekst>
+                <div className="w-full h-[1px] bg-gray-500 my-2">
+                </div>
+            </div>
+            
+            <div className="w-full justify-start mt-10">
+                <Naslov className="">
+                    Dugotrajnost paravana.
+                </Naslov>
+                <Tekst className="text-black">
+                    Kod paravana dugotrajnost može da vam bude neograničena, 
+                    redovno čistite staklo od kamenca i izgledaće kao novo uvek.          
+                </Tekst>
+                <Tekst className="text-black">
+                    Staklo koje se montira je pod obavezno kaljeno, to znači da je to staklo ojačano od običnog i mnogo je otpornije na udarce, daje sigurnost od povreda prilikom loma jer i ako se desi da pukne, staklo će pući na mnogo malih komadića 8x8mm.        
+                </Tekst>
+                <Tekst className="text-black">
+                    Okov je od prohroma odličnog kvaliteta, može se plastificirati u bilo koju boju (najčešće je to crna i zlatna boja) time možete još više uklopiti kabinu u vaš enterijer ako vam se to svidja.
+                </Tekst>
+                <div className="w-full h-[1px] bg-gray-500 my-2">
+
+                </div>
+            </div>
+
+            
+
+        
 
             <div className="w-full justify-start mt-10">
                 <Naslov className={''}>

@@ -32,6 +32,7 @@ import { promises as fs } from 'fs';
 import Proizvod from '../components/Proizvod'
 import ProizvodSarke from '../components/listaProzvoda/ProizvodSarke'
 import ProizvodParavan from '../components/listaProzvoda/ProizvodParavan'
+import IzradaPoMeri from '../components/ux/IzradaPoMeri'
 
 
 const images = [
@@ -101,7 +102,7 @@ export default async function Home() {
             Izrada Tuš Kabina Po Meri
           </h1>
           <p className="text-[#9c9c9c] text-center pt-3 md:text-[18px] text-[14px] md:px-0 px-5">
-            Na stranici cete naučiti sve što treba da znate o tuš kabinama po meri.
+            Sve što treba da znate o tuš kabinama po meri.
           </p>
         
         
@@ -127,6 +128,13 @@ export default async function Home() {
               Kabine ako imate malo kupatilo
             </button>
           </Link>
+          <Link href={'/paravani-za-tus-kabine'} target='_blank'>
+            <button className="text-white bg-black px-8 py-2 rounded-3xl
+            font-medium cursor-pointer text-[12px] md:text-[14px]"
+            >
+              Paravani za tuš kabine
+            </button>
+          </Link>
         </div>
         {/*END Buttons*/}
         </div>
@@ -136,32 +144,22 @@ export default async function Home() {
         */}
 
         <div className="w-full justify-start">
+          {/*
+          
           <Naslov className="">
             Zašto baš izrada po meri.
           </Naslov>
           <Tekst className="text-black ">
             Često ljudi biraju izradu po meri jer postoji dosta varijacija u samom izgledu, kakav će vam biti okov i koje boje, koja vrsta stakla, kakvog je položaja kabina, i tako mogu dobiti svoju kabinu koju su zamislili ili videli negde na internetu.
           </Tekst>
+          */}
+
+          <IzradaPoMeri/>
           <div className="w-full h-[1px] bg-gray-500 my-2">
 
           </div>
         </div>
 
-        <div className="w-full justify-start mt-10">
-          <Naslov className="">
-            Kabine za svako kupatilo.
-          </Naslov>
-          <Tekst className="">
-            Često nam ljudi dolaze sa problemima jer za svoje kupatilo ne mogu da nađu odgovarajuću kabinu, mere se ne poklapaju sa onim u salonima,
-            imaju malo kupatilo ili neku kosinu na primer podkrovlje...          
-          </Tekst>
-          <Tekst className="">
-            Za sve te probleme ima rešenje, svako kupatilo može da ima svoju funkcionalnu modernog izgleda tuš kabinu.
-          </Tekst>
-          <div className="w-full h-[1px] bg-gray-500 my-2">
-
-          </div>
-        </div>
 
         <div className="w-full justify-start mt-10">
           <Naslov className={''}>
@@ -175,13 +173,13 @@ export default async function Home() {
           <Naslov className="-mb-8">
             Koje sve kabine postoje i kako da izaberete savršenu za vas.
           </Naslov>
-          <VrsteKabina/>
-          <Tekst className="-mt-5">
+          <Tekst className="mt-8">
             Zavisi dosta od prostora i mogućnosti u kupatilu , ako imate veš mašinu na primer i vrata na šarke će vam udarati u mašinu onda je bolja opcija ugraditi Klizna Vrata jer ona ne izlaze iz gabarita kabine.          
           </Tekst>
           <Tekst className="">
             Druga stvar je estetika, nekim ljudima se jednostavno više svidja Klizna kabina nego na Šarke, nekima obrnuto.        
           </Tekst>
+          <VrsteKabina/>
           <div className="w-full h-[1px] bg-gray-500 my-2">
 
           </div>
@@ -286,10 +284,12 @@ export default async function Home() {
             </div>
           </div>
 
-
-          <PodNaslov className={'md:pt-20 pt-10'}>
-            Primeri cena kliznih kabina
-          </PodNaslov>
+          <div id="cene">
+            <PodNaslov  className={'md:pt-20 pt-10'}>
+              Primeri cena kliznih kabina
+            </PodNaslov>
+          </div>
+          
           <Tekst>
             Klikom na kabinu možete da otvorite novu stranicu koja prikazuje
             birani model i cene sa određenim dimenzijama.
@@ -310,10 +310,11 @@ export default async function Home() {
 
 
           
-
-          <Naslov className="mt-10">
-            Kabine na šarke.
-          </Naslov>
+          <div id="sarke">
+            <Naslov className="mt-10">
+              Kabine na šarke.
+            </Naslov>
+          </div>
           <Tekst className="">
             Kabina koja koristi metalne šarke za osiguravanje staklenih vrata, a osnovna karakteristika su vrata koja se otvaraju ka unutra ili napolje u zavisnoti od prostora, što je čini prilagodljivom različitim rasporedima kupatila. 
           </Tekst>
@@ -432,9 +433,11 @@ export default async function Home() {
           </div>
 
 
-          <Naslov className="mt-10">
-            Paravani, najjednostavnije.
-          </Naslov>
+          <div id="paravan">
+            <Naslov className="mt-10">
+              Paravani, najjednostavnije.
+            </Naslov>
+          </div>
           <Tekst className="">
             Ako hoćete jednostavnost i da uštedite, a da imate pregradu u kupatilo onda je idealno rešenje paravan.
             Jedno staklo sa profilima vertikalno i horizontalno i na vrhu teleskop koji dodatno učvršćuje staklo i to je to.
@@ -728,20 +731,6 @@ export default async function Home() {
           <div className="w-full h-[1px] bg-gray-500 my-2">
           </div>
           
-        </div>
-
-        <div id="cene" className="w-full justify-start mt-10">
-          <Naslov className={''}>
-            Kako se kreću cene.
-          </Naslov>
-          <Tekst className={''}>
-            Cena je 90 eura po kvadratu sa montažom plus okov.
-          </Tekst>
-          <Tekst className={''}>
-            Ako hoćete da saznate cenu za vašu kabinu morate da nas kontaktirate.
-          </Tekst>
-          <div className="w-full h-[1px] bg-gray-500 my-2">
-          </div>
         </div>
 
 

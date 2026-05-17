@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/paravani-za-tus-kabine`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
-      priority: 0.9,
+      priority: 0.8,
     },
   ]
 }

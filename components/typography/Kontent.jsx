@@ -32,7 +32,8 @@ export function PodebljanPodNaslov ({children,className}) {
 export function Tekst ({children,className}) {
     return (
         <h1 className={`md:text-lg text-base md:leading-[28px] leading-[25px] font-medium 
-        text-gray-500 ${className}`}>
+        text-gray-500 
+        ${className}`}>
             {children}
         </h1>
     )
